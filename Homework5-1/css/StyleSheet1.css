@@ -147,9 +147,10 @@ button {
     border-top: 1px solid #778ab2;
 }
 
-input[type="text"]:hover {
+input[type="text"]:active {
     background: rgba(26, 85, 138, 0.7);
     box-shadow: 0 0 12px #6495ED;
+    color: white;
 }
 
 input[type="email"]:hover {
@@ -184,4 +185,7 @@ p {
     padding-bottom: 20px;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.6);
+}
+::-webkit-input-placeholder { /* для webkit браузеров */
+    color: white;
 }
