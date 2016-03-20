@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 @font-face {
     font-family: 'Helvetica_Neue Regular';
     src: url('fonts/helveticaneue-thin-webfont.eot');
@@ -36,38 +35,30 @@ body {
         text-align: center;
         text-decoration: none;
     }
-
         .menu a:visited {
             color: rgb(90, 175, 231);
         }
-
         .menu a:active {
             color: white;
         }
-
         .menu a:hover {
             background-color: rgba(90, 175, 231, 0.6);
             padding: 10px;
             color: white;
         }
-
 ul.menu li {
     display: inline;
     list-style: none;
     float: left;
     color: white;
 }
-
-
 .facebook li {
     display: inline-block;
     list-style: none;
 }
-
 .line {
     color: black;
 }
-
     .line:before {
         display: inline-block;
         width: 120px;
@@ -76,7 +67,6 @@ ul.menu li {
         border-top: 1px solid #666666;
         border-bottom: 1px solid #000;
     }
-
     .line:after {
         display: inline-block;
         width: 120px;
@@ -85,7 +75,6 @@ ul.menu li {
         border-top: 1px solid #666666;
         border-bottom: 1px solid #000;
     }
-
 .form {
     color: white;
     width: 500px;
@@ -95,7 +84,6 @@ ul.menu li {
     text-align: center;
     margin-top: 50px;
 }
-
 .chevron::before {
     border-style: solid;
     border-width: 0.25em 0.25em 0 0;
@@ -111,12 +99,10 @@ ul.menu li {
     color: white;
     margin-left: 15px;
 }
-
 .chevron.right:before {
     left: 0;
     transform: rotate(45deg);
 }
-
 [type="text"], [type="email"], [type="password"], [type="submit"] {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -131,55 +117,58 @@ ul.menu li {
     cursor: pointer;
     font-size: 15px;
 }
-
 button {
-    border-radius: 5px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 230px;
-    /*height: 45px;*/
+height: 37px;
     border: 0;
-    color: white;
-    font-size: 16px;
     background: linear-gradient(#3d5792, #314371);
-    border-top: 1px solid #778ab2;
+    
 }
-
-input[type="text"]:active {
+input[type="text"]:hover {
     background: rgba(26, 85, 138, 0.7);
     box-shadow: 0 0 12px #6495ED;
     color: white;
 }
-
 input[type="email"]:hover {
     background: rgba(26, 85, 138, 0.8);
     box-shadow: 0 0 12px #6495ED;
 }
-
 input[type="password"]:hover {
     background: rgba(26, 85, 138, 0.8);
     box-shadow: 0 0 12px #6495ED;
 }
-
 input[type="submit"] {
     background: rgb(52, 132, 201);
     color: white;
     font-size: 15px;
 }
-
     input[type="submit"]:hover {
         color: rgba(255, 255, 255, 0.6);
         box-shadow: 0 0 5px 2px;
     }
-
+       input[type="submit"]:focus {
+        color: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 0 5px 2px;
+    }
+    input[type="text"]:focus {
+    background: rgba(26, 85, 138, 0.7);
+    box-shadow: 0 0 12px #6495ED;
+    color: white;
+}
+input[type="email"]:focus {
+    background: rgba(26, 85, 138, 0.8);
+    box-shadow: 0 0 12px #6495ED;
+     color: white;
+}
+input[type="password"]:focus {
+    background: rgba(26, 85, 138, 0.8);
+    box-shadow: 0 0 12px #6495ED;
+     color: white;
+}
 .check {
     font-size: 14px;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.6);
 }
-
 p {
     font-size: 11px;
     padding-bottom: 20px;
@@ -188,4 +177,8 @@ p {
 }
 ::-webkit-input-placeholder { /* для webkit браузеров */
     color: white;
+}
+
+input [type="checkbox"]:indeterminate {
+  background: blue;
 }
