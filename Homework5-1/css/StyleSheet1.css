@@ -176,7 +176,8 @@ p {
     color: rgba(255, 255, 255, 0.6);
 }
 ::-webkit-input-placeholder { /* для webkit браузеров */
-    color: white;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.6);
 }
 
 input [type="checkbox"]:indeterminate {
